@@ -1,0 +1,130 @@
+/*=========
+   General
+  =========*/
+body {
+	background: url('../images/bg.png');
+	background-attachment: fixed;
+	font-family: 'Open Sans';
+	font-size: 14px;
+}
+a:link { text-decoration: underline; color: #0943AD; }
+a:visited { text-decoration: none; color: #0943AD; }
+a:active { text-decoration: none; color: #0943AD; }
+a:hover { text-decoration: none; color: #3476ED; }
+
+/*============
+   Search bar
+  ============*/
+#search-area {
+	margin: 20px;
+	text-align: center;
+}
+#search-input {
+	-webkit-appearance: none;
+	height: 30px;
+	width: 200px;
+	padding: 0px 10px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+#search-input:focus {
+	outline: none;
+	box-shadow: 0px 0px 3px #2D69D6;
+}
+#search-btn {
+	height: 30px;
+}
+#previous-searches {
+	margin: 7px 0px 15px;
+	font-size: 12px;
+	color: #333;
+}
+
+/*========
+   Tweets
+  ========*/
+.tweet {
+	background: #eee;
+	margin: 10px auto;
+	width: 800px;
+	border: 1px solid #333;
+	/*box-shadow: 0px 0px 2px black;*/
+	transition: 0.3s;
+	position: relative;
+}
+.tweet:hover {
+	box-shadow: 0px 0px 5px black;
+	background: #F7F7F7;
+}
+.tweet-left {
+	float: left;
+	text-align: center;
+	width: 129px;
+	padding: 10px;
+	background: #ccc;
+	border-right: 1px solid #333;
+}
+.avatar {
+	height: 51px;
+	width: 51px;
+	border: 1px solid #333;
+}
+.bot-border {
+	border-bottom: 1px solid #333;
+}
+.tweet-right {
+	float: left;
+	width: 620px;
+	padding: 15px;
+	font-size: 16px;
+}
+.clear {
+	clear: both;
+}
+.tweet-extra {
+	display: none;
+	margin-top: 20px;
+	font-size: 12px;
+	overflow: hidden;
+}
+.toggle {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 10px;
+	color: #aaa;
+	cursor: pointer;
+}
+.toggle:hover {
+	color: #053285;
+}
+
+/*=======
+   Other
+  =======*/
+#welcome, #no-results {
+	text-align: center;
+	font-size: 24px;
+	color: #666;
+}
+#assn-info {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+}
+#loading {
+	text-align: center;
+}
+#loading-img {
+	margin: 25px 0px;
+}
+#show-more {
+	margin: 20px auto;
+	display: none;
+	text-align: center;
+}
+#show-more-btn {
+	height: 30px;
+}

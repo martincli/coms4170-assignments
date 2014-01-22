@@ -1,0 +1,18 @@
+COMS W4170 User Interface Design<br/>
+Assignment #1: Twitter Search
+
+Assignment
+----------
+The purpose of this assignment was to create a simple web-based UI for specifying and refining a search on Twitter.
+
+Running
+-------
+To run the application, simply download the files and open index.html in a browser (tested with Chrome and Firefox).
+
+Design Decisions
+----------------
+The overall design of the application is minimalistic and (hopefully) aesthetically pleasing. On the home page, the user only sees the search bar and a one sentence instruction. Upon entering search terms and either hitting enter or clicking the "Search" button, the app gives feedback that the search results are loading so that the user knows what is happening after issuing a command. Modifying the search is disabled during this loading time, ensuring that the expected results for the search query are shown. The app then loads 50 tweets from the Twitter Search API. A tweet is formatted as a bordered box, which includes the username (with a link to the corresponding Twitter profile) and picture of the author on the left, and the text of the tweet on the right. Hovering over a tweet causes it to "glow." This formatting was chosen to let the user see all important information for each tweet at a glance. The profile pictures were included to make it easier to distinguish tweets from one another. This layout of picture + username + post is standard in many message board applications.
+
+From the results list, the user can click on the "Show More" link on the bottom right of each tweet to see further details: date posted, a link to the tweet, number of times favorited, and number of times retweeted. The "Show More" link becomes "Show Less" and the extra information can be hidden again. jQuery's slideToggle provides an efficient way to show extra information on the same page, but only if the user wants to see it. The "Show More" link is subtle and unobtrusive so a user can completely ignore the extra information if desired. Even with the extra information shown, there is not much clutter and it is still intuitive to read through tweets. Scrolling to the bottom, the user can click the "Show More Tweets" button to load 10 more tweets for the same search. The screen will automatically scroll to the first unseen tweet once the tweets are loaded. This can be repeated until all tweets satisfying the query are displayed (when this happens, no further tweets will load). Again, modifying the search is disabled while new tweets are loading. This feature acts the same as when a search is first initiated, maintaining consistency throughout the application. The user is again given feedback that more tweets are loading, and the screen repositions automatically so that it is unambiguous where the new tweets begin.
+
+Under the search bar at the top of the page, the last 10 searches are saved and shown next to "Recent Searches". Any saved search can be clicked on to use the same search terms (the application behaves the same as if the selected search was entered and executed again). This feature is fairly intuitive and users should easily be able to see and access their previous searches. Finally, the app allows any Twitter API search operators, so a user can enter search queries such as "breakfast place:5a110d312052166f" to search for tweets about breakfast in San Francisco, "lunch until:2013-9-30" to search for tweets about lunch before September 30th, 2013, or "dinner since:2013-9-30" to search for tweets about dinner after September 30th, 2013. These features require a little more experience and in-depth knowledge of the application to use, but should not be necessary for most users, so they remain as search operators.

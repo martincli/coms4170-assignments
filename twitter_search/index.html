@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>Twitter Search App</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id="search-area">
+		<form id="search-form">
+			<input type="text" id="search-input" placeholder="Type your search here.">
+			<input type="submit" id="search-btn" value="Search">
+		</form>
+		<div id="previous-searches"></div>
+	</div>
+
+	<div id="welcome">
+		<br>Type anything into the search bar above to begin.
+	</div>
+	<div id="assn-info">
+		Twitter Search App by Martin Li (mcl2159)
+		<br>COMS W4170: User Interface Design
+		<br>Assignment 1, Part 3
+	</div>
+
+	<div id="no-results">
+	</div>
+	<div id="results-area">
+	</div>
+	<div id="loading">
+	</div>
+
+	<div id="show-more">
+		<input type="button" id="show-more-btn" value="Show More Tweets">
+	</div>
+
+	<script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/codebird-js/sha1.js"></script>
+	<script src="js/vendor/codebird-js/codebird.js"></script>
+	<script src="js/search.js"></script>
+</body>
+</html>
