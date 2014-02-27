@@ -16,7 +16,7 @@ a:hover { text-decoration: none; color: #3476ED; }
    Search bar
   ============*/
 #search-area {
-	margin: 20px;
+	margin: 50px auto 20px;
 	text-align: center;
 }
 #search-input {
@@ -34,6 +34,7 @@ a:hover { text-decoration: none; color: #3476ED; }
 }
 #search-btn {
 	height: 30px;
+	cursor: pointer;
 }
 #previous-searches {
 	margin: 7px 0px 15px;
@@ -112,7 +113,7 @@ a:hover { text-decoration: none; color: #3476ED; }
 	margin-top: 50px;
 	text-align: center;
 	font-size: 14px;
-	color: #999;
+	color: #777;
 }
 #loading {
 	text-align: center;
@@ -121,10 +122,11 @@ a:hover { text-decoration: none; color: #3476ED; }
 	margin: 25px 0px;
 }
 #show-more {
-	margin: 20px auto;
+	margin: 20px auto 40px;
 	display: none;
 	text-align: center;
 }
 #show-more-btn {
 	height: 30px;
+	cursor: pointer;
 }
